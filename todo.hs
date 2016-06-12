@@ -8,10 +8,7 @@ dispatch = [ ("add", add)
            , ("view", view)
            , ("remove", remove)
            , ("prioritize", prioritize)
-<<<<<<< HEAD
            , ("help", help)
-=======
->>>>>>> 9d197da79c26282947a53286c4f0dec595c78c97
            ]
 
 main = do
@@ -57,11 +54,8 @@ prioritize [fileName, numberString] = do
     hClose tempHandle
     removeFile fileName
     renameFile tempName fileName
-<<<<<<< HEAD
 
 help :: [String] -> IO ()
 help []  = do print $ map fst dispatch
               print "args ordering: filename rest_of_args"  
 
-=======
->>>>>>> 9d197da79c26282947a53286c4f0dec595c78c97
